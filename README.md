@@ -5,13 +5,13 @@
 ![Bash Shell](https://img.shields.io/badge/Shell_Script-Bash-4EAA25?style=for-the-badge&logo=gnu-bash&logoColor=white)
 ![Git](https://img.shields.io/badge/Git-Repository-F05032?style=for-the-badge&logo=git&logoColor=white)
 
-Laboratório prático desenvolvido para estudar, praticar e documentar os fundamentos de administração de sistemas, gerenciamento de privilégios e diagnóstico de problemas (*troubleshooting*) em ambientes Linux.
+Laboratório prático desenvolvido para estudar, praticar e documentar os fundamentos de administração de sistemas, gerenciamento de permissões e diagnóstico de problemas (*troubleshooting*) em ambientes Linux.
 
 ---
 
 ## 🎯 Objetivo
 
-Consolidar conhecimentos práticos de Linux essenciais para a rotina de suporte técnico, infraestrutura e segurança da informação. O foco do projeto foi executar comandos diretamente no terminal Bash, simulando tarefas diárias de sysadmin como controle de acesso, auditoria de processos, análise de recursos e diagnósticos de conectividade.
+Consolidar conhecimentos práticos de Linux essenciais para a rotina de suporte técnico e infraestrutura. O foco do projeto foi executar comandos diretamente no terminal Bash, simulando tarefas diárias de administração do sistema, como gestão de usuários, monitoramento de processos, análise de recursos e testes de conectividade.
 
 ---
 
@@ -27,37 +27,37 @@ Consolidar conhecimentos práticos de Linux essenciais para a rotina de suporte 
 ## 📚 Conteúdos e Comandos Praticados
 
 ### 📂 1. Navegação e Manipulação de Arquivos
-Navegação na árvore de diretórios, criação, cópia, movimentação e remoção segura de arquivos e pastas.
+Navegação na árvore de diretórios, criação, cópia, movimentação e remoção de arquivos e pastas.
 ```bash
 pwd ls ls -la cd mkdir touch cp mv rm
 ```
 
-### 👤 2. Usuários, Grupos e Privilégios
-Criação e gestão de contas de usuários, administração de grupos secundários e verificação de privilégios e identidades (`UID`/`GID`).
+### 👤 2. Usuários e Grupos
+Criação e gerenciamento de contas de usuários, criação de grupos e associação de usuários a grupos secundários.
 ```bash
-whoami id adduser groupadd usermod groups su
+whoami id adduser groupadd usermod groups
 ```
 
 ### 🔐 3. Permissões e Proprietários
-Configuração de permissões de leitura, escrita e execução em notação octal e alteração de proprietário e grupo de arquivos.
+Visualização e alteração de permissões de leitura, escrita e execução em arquivos e diretórios, além de alteração de proprietário e grupo.
 ```bash
 ls -l chmod chown chgrp
 ```
 
-### ⚙️ 4. Processos e Gerenciamento de Tarefas
-Execução de processos em segundo plano (*background*), monitoramento de PIDs e encerramento de tarefas via sinais do Kernel.
+### ⚙️ 4. Processos e Recursos
+Listagem e monitoramento de processos, execução de tarefas em segundo plano (*background*) e encerramento de processos travados ou desnecessários.
 ```bash
-ps aux top htop kill sleep &
+ps aux top htop kill sleep 300 &
 ```
 
-### 💾 5. Armazenamento e Memória
-Análise do consumo de memória RAM, utilização do espaço de Swap e diagnóstico de ocupação de disco e partições montadas.
+### 💾 5. Memória e Armazenamento
+Análise de uso da memória RAM e Swap, diagnóstico de ocupação de disco, verificação de espaço em diretórios e listagem de blocos e partições montadas.
 ```bash
-free -h df -h du -sh
+free -h df -h du -sh lsblk mount
 ```
 
 ### 🌐 6. Diagnóstico de Redes e Conectividade
-Mapeamento de interfaces de rede, validação da rota padrão (gateway), testes de conectividade ICMP, verificação de portas escutando (`LISTEN`) e testes HTTP via terminal.
+Mapeamento de interfaces e endereços IP, verificação de rotas padrão, testes de conectividade com pacotes ICMP, análise de conexões/portas ativas e requisições HTTP via terminal.
 ```bash
 ip a ip r ping ss -tulnp curl
 ```
@@ -70,30 +70,3 @@ ip a ip r ping ss -tulnp curl
 linux-lab/
 ├── README.md
 ├── navegacao.md
-├── usuarios.md
-├── permissoes.md
-├── processos.md
-├── armazenamento.md
-├── rede.md
-└── images/
-    ├── navegacao/
-    ├── usuarios/
-    ├── permissoes/
-    ├── processos/
-    ├── armazenamento/
-    └── rede/
-```
-
----
-
-## 🛠️ Competências Desenvolvidas
-
-* **Administração Básica:** Operação de sistemas operacionais baseados em Linux via CLI.
-* **Gestão de Identidade (IAM):** Provisionamento de usuários e controle de acesso granular com grupos.
-* **Segurança de Arquivos:** Aplicação do princípio do menor privilégio (*Least Privilege*) usando `chmod` e `chown`.
-* **Troubleshooting de Desempenho:** Identificação de gargalos em CPU, memória RAM e disco.
-* **Análise de Conectividade:** Validação do stack TCP/IP, serviços de rede ativos e respostas de requisições web.
-
----
-
-📌 *Este projeto possui caráter estritamente educacional e faz parte do meu portfólio prático de estudos em Tecnologia da Informação e Segurança.*
