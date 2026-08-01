@@ -1,4 +1,4 @@
-<img width="1207" height="691" alt="navegacao-completa" src="https://github.com/user-attachments/assets/efc27264-f6ff-42c4-871d-62ebe16fc684" /># 📂 Navegação e Manipulação de Arquivos
+# 📂 Navegação e Manipulação de Arquivos
 
 Nesta etapa foram praticados comandos fundamentais para navegar pelo sistema de arquivos Linux e realizar operações básicas com diretórios e arquivos.
 
@@ -99,8 +99,7 @@ ls
 
 A imagem abaixo apresenta o registro completo da atividade prática, desde a navegação inicial no sistema até a criação, cópia, movimentação e remoção de arquivos.
 
-![Prática completa de navegação e manipulação de arquivos](<img width="1207" height="691" alt="navegacao-completa" src="https://github.com/user-attachments/assets/1918fe5b-d8ef-4ac2-b831-23863d1e2b4b" />)
-
+![Prática completa de navegação e manipulação de arquivos](https://github.com/user-attachments/assets/efc27264-f6ff-42c4-871d-62ebe16fc684)
 ---
 
 ## 📌 Resumo dos comandos
